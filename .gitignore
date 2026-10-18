@@ -11,22 +11,23 @@
 .svn/
 .swiftpm/
 migrate_working_dir/
+Thumbs.db
+desktop.ini
 
-# IntelliJ related
+# IntelliJ / Android Studio related
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code related
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
@@ -39,14 +40,38 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
+# Android Studio & Gradle
 /android/app/debug
 /android/app/profile
 /android/app/release
+.gradle/
+android/.gradle/
+android/local.properties
+android/app/build/
+
+# iOS & macOS build artifacts
+**/ios/Pods/
+**/ios/.symlinks/
+**/macos/Pods/
+**/macos/.symlinks/
+
+# Windows & Linux desktop ephemeral build
+windows/flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/x64/
+windows/x86/
+
+# Flutter auto-generated plugin registrants (re-generated on every run)
+**/generated_plugin_registrant.cc
+**/generated_plugin_registrant.h
+**/generated_plugins.cmake
+**/GeneratedPluginRegistrant.swift
+**/GeneratedPluginRegistrant.h
+**/GeneratedPluginRegistrant.m
+**/GeneratedPluginRegistrant.java
 
 # Widget Preview related
 .widget_preview/
 
 # Design mockups & screenshots
 flutter_screen/
-
